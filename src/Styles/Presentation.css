@@ -1,0 +1,114 @@
+.presentation{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.presentation-division-header-body{
+    display: flex;
+    flex-direction: column;
+}
+
+    .presentation-division-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        margin: 20px 0; /* Espaciado exterior para separar del contenido cercano */
+    }
+
+        .presentation-header-information-worker {
+            width: 45%;
+            min-width: 300px; /* Establece un ancho mínimo para mantener la legibilidad */
+            border: 2px solid #3498db; /* Borde con color azul */
+            border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+            padding: 20px; /* Espaciado interno para mayor claridad */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+            margin: 0 10px; /* Espaciado entre los bloques de información */
+            text-align: center; /* Centra el texto dentro del bloque */
+        }
+        /* Estilos para los párrafos dentro de la sección */
+        .presentation-header-information-worker p {
+            margin: 10px 0; /* Espaciado entre párrafos */
+            font-size: 16px; /* Tamaño de fuente */
+        }
+        /* Estilos para el texto fuerte (negrita) dentro de los párrafos */
+        .presentation-header-information-worker strong {
+            color: #2c3e50; /* Color del texto fuerte en un tono oscuro */
+        }
+        /* Estilos adicionales para un aspecto más elegante */
+        .presentation-header-information-worker:hover {
+            transform: scale(1.05); /* Efecto de escala al pasar el mouse para destacar el bloque */
+            transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra al pasar el mouse */
+        }
+
+
+    .presentation-division-body{
+        display:  flex;
+        flex-direction: row;
+        background-color: #61daea;
+    }
+
+
+        .presentation-body-image {
+            max-width: 100%; /* Garantiza que la imagen no exceda el ancho del contenedor */
+            max-height: 300px; /* Altura máxima de la imagen */
+            width: auto; /* Ancho automático para mantener la proporción original */
+            height: auto; /* Altura automática para mantener la proporción original */
+            display: block; /* Elimina el espacio extra debajo de la imagen */
+            margin: 0 auto; /* Centra la imagen horizontalmente dentro de su contenedor */
+            border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra para resaltar la imagen */
+            transition: transform 0.3s ease-in-out; /* Agrega una transición suave al pasar el mouse */
+            align-self: center;
+        }
+        /* Efecto de escala al pasar el mouse para resaltar la imagen */
+        .presentation-body-image:hover {
+            transform: scale(1.05);
+        }
+        /* Ajustes adicionales para asegurar que la imagen esté centrada verticalmente */
+        .presentation-body-image::before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .presentation-body-image img {
+            vertical-align: middle;
+        }
+
+
+        .presentation-body-information {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+        }
+        
+            /* Estilos para cada bloque de información */
+            .presentation-body-information-work {
+                margin-bottom: 20px; /* Espaciado entre bloques de información */
+                font-size: 16px; /* Tamaño de fuente */
+                line-height: 1.5; /* Espaciado entre líneas para una mejor legibilidad */
+            }
+            /* Estilos para el texto fuerte (negrita) dentro de los párrafos */
+            .presentation-body-information-work strong {
+                color: #3498db; /* Color del texto fuerte en un tono azul */
+            }
+            /* Añade un fondo suave y bordes redondeados a cada bloque de información */
+            .presentation-body-information-work {
+                background-color: #ecf0f1; /* Color de fondo suave */
+                border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+                padding: 15px; /* Espaciado interno para mayor claridad */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra para resaltar el bloque */
+                transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+            }
+            /* Efecto de escala al pasar el mouse para resaltar cada bloque de información */
+            .presentation-body-information-work:hover {
+                transform: scale(1.03);
+            }
+            /* Ajustes adicionales para asegurar que el texto esté centrado en el bloque */
+            .presentation-body-information-work strong,
+            .presentation-body-information-work p {
+                text-align: center;
+            }
